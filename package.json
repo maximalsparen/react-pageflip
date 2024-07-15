@@ -11,6 +11,9 @@
     "homepage": "https://nodlik.github.io/react-pageflip/",
     "main": "build/index.js",
     "module": "build/index.es.js",
+    "files": [
+        "build"
+    ],
     "scripts": {
         "build": "rollup -c",
         "build:dev": "rollup -c --watch",

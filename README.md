@@ -1,5 +1,10 @@
 [![GitHub license](https://img.shields.io/github/license/Nodlik/react-pageflip)](https://github.com/Nodlik/react-pageflip/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/react-pageflip)](https://www.npmjs.com/package/react-pageflip) [![npm](https://img.shields.io/npm/dm/react-pageflip)](https://npmcharts.com/compare/react-pageflip?minimal=true) [![](https://img.shields.io/badge/support-buymeacoffee-orange)](https://www.buymeacoffee.com/nndlik)
 
+# Version 2.1.0
+-   included merge request from zakari9959
+    https://github.com/Nodlik/react-pageflip/pull/44/commits/9a1bab09147edd71f7ca23c43d2c5e9d1b53ca5c
+-   updated dependencies
+
 # Version 2.0.0
 
 This version fixed some bugs and is completely written with react hooks.

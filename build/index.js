@@ -3,11 +3,7 @@
 var React = require('react');
 var pageFlip = require('page-flip');
 
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
-
-const HTMLFlipBookForward = React__default["default"].forwardRef((props, ref) => {
+const HTMLFlipBookForward = React.forwardRef((props, ref) => {
     const htmlElementRef = React.useRef(null);
     const childRef = React.useRef([]);
     const pageFlip$1 = React.useRef();
@@ -33,8 +29,8 @@ const HTMLFlipBookForward = React__default["default"].forwardRef((props, ref) =>
     React.useEffect(() => {
         childRef.current = [];
         if (props.children) {
-            const childList = React__default["default"].Children.map(props.children, (child) => {
-                return React__default["default"].cloneElement(child, {
+            const childList = React.Children.map(props.children, (child) => {
+                return React.cloneElement(child, {
                     ref: (dom) => {
                         if (dom) {
                             childRef.current.push(dom);
@@ -87,9 +83,9 @@ const HTMLFlipBookForward = React__default["default"].forwardRef((props, ref) =>
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pages]);
-    return (React__default["default"].createElement("div", { ref: htmlElementRef, className: props.className, style: props.style }, pages));
+    return (React.createElement("div", { ref: htmlElementRef, className: props.className, style: props.style }, pages));
 });
-const HTMLFlipBook = React__default["default"].memo(HTMLFlipBookForward);
+const HTMLFlipBook = React.memo(HTMLFlipBookForward);
 
 /* eslint-disable prettier/prettier */
 

@@ -25,6 +25,7 @@ export interface IFlipSetting {
     maxShadowOpacity?: number;
     /** If this value is true, the first and the last pages will be marked as hard and will be shown in single page mode */
     showCover?: boolean;
+    disableHardPages?: boolean;
     /** Disable content scrolling when touching a book on mobile devices */
     mobileScrollSupport?: boolean;
     /** Set the forward event of clicking on child elements (buttons, links) */
